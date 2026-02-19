@@ -1,6 +1,5 @@
 import torch
 
-# --- FAQ Knowledge Base ---
 faq_knowledge_base = {
     "what is the capital of afghanistan": "The capital of Afghanistan is Kabul.",
     "what is the capital of australia": "The capital of Australia is Canberra.",
@@ -54,3 +53,4 @@ faq_knowledge_base = {
 def query_faq_kb(user_input):
     normalized = user_input.lower().strip().rstrip('?.!')
     return faq_knowledge_base.get(normalized, None)
+
